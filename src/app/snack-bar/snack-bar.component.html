@@ -1,0 +1,15 @@
+<div class="smartMessageWrapper higherPosition">
+  <div class="smartMessage">
+    <div class="smartMessageHeader">
+      <span class="closeButton">x</span>
+      <div class="smartMessageText">
+        <span>{{messageBody}}</span>
+      </div>
+    </div>
+    <div class="smartMessageButtons">
+      <div *ngFor="let link of links" class="smartMessageButton">
+        <a [attr.href]="link.ctaLink">{{link.ctaText}}</a>
+      </div>
+    </div>
+  </div>
+</div>

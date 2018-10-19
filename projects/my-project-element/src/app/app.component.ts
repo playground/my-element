@@ -8,7 +8,7 @@ import {
 import { SnackBarComponent } from './snack-bar/snack-bar.component';
 
 @Component({
-  selector: 'my-element',
+  selector: 'my-project-element',
   templateUrl: 'app.component.html',
   styleUrls: [ './app.component.scss' ]
 })
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   @Input() verticalPosition:MatSnackBarVerticalPosition = 'bottom';
   @Input() horizontalPosition:MatSnackBarHorizontalPosition = 'center';
   @Input() autoHide:number = 5000;
-  @Input() setAutoHide:boolean = false;
+  @Input() setAutoHide:boolean = true;
 
   constructor(
     private snackBar: MatSnackBar) {

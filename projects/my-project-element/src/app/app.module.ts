@@ -24,7 +24,7 @@ import { environment } from '../environments/environment';
     provide: 'env',
     useValue: environment
   }],
-  // bootstrap: [AppComponent],
+  bootstrap: [AppComponent],
   entryComponents: [AppComponent, SnackBarComponent]
 })
 export class AppModule {
